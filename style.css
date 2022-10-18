@@ -76,7 +76,7 @@
   .showcase {
     background-image: linear-gradient(
           rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)
-        ), url("https://i.imgur.com/nKdIhxO.jpg");
+        ), url("/assets/firstBackground.jpg");
     background-repeat: no-repeat;
     background-position: 50% 12%;
     background-size: calc(600px + 40vw);
