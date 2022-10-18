@@ -1,0 +1,462 @@
+:root {
+    --primary-color: #00786b;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #171717;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #171717;
+    height: 70px;
+    color: #fff;
+  }
+  
+  .navbar img {
+    height: 50px;
+    width:auto;
+    border-radius: 50%;
+    border: 2px solid #3a3a3a;
+    padding: 0 0px;
+    margin: auto 10px;
+  }
+  
+  .navbar ul {
+    display:flex;
+  }
+  
+  .navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 2px #fff solid;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  /* Showcase */
+  .showcase {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)
+        ), url("https://i.imgur.com/nKdIhxO.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 12%;
+    background-size: calc(600px + 40vw);
+    color: #fff;
+    position: relative;
+  }
+  
+  .showcase .btn-outline { 
+    border: 1px solid #00786b;
+  }
+  .showcase .container {
+      height: 400px;   
+  }
+  
+  .showcase .grid {
+    overflow: visible;
+    grid-template-columns: 45% auto;
+    gap: calc(20vw - 200px);
+  }
+  
+  .showcase h1 {
+    font-size: 40px;
+  }
+  
+  .showcase p {
+    margin: 20px 10px;
+  }
+  
+  .showcase-video {
+    position: relative;
+    top: 70px;
+    height: auto;
+    width: auto;
+    padding: 20px 20px 16px 20px;
+    z-index: 100;
+    justify-self: flex-end;
+    background-image: radial-gradient(circle, rgba(0, 86, 77,.7)  0%, rgba(0, 137, 123,.7) 100%), linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+  }
+  
+  
+  .first::before,
+  .first::after {
+    content: '';
+    position: absolute;
+    height: 110px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #171717;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    z-index:50;
+  }
+  
+  .showcase .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+    padding: 5px;
+    border-radius: 0;
+  }
+  
+  #livestream {
+    height:240px;
+    width:427px;
+    background-color:black;
+  }
+  
+  /* Secondary Showcase */
+  .second {
+   background-image: linear-gradient(
+          rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)
+        ), url("https://assets.albiononline.com/uploads/media/default/media/aa4ec76c625011c05b3546dd7aeacd8e16c0660b.jpeg");
+    background-position: 50% 0%;
+    margin: 30px 0 0 0;
+  }
+  
+  .second .showcase-video {
+    position: relative;
+    top: 100px;
+    height: auto;
+    width: auto;
+    z-index: 100;
+    justify-self: flex-end;
+    background-image: radial-gradient(circle, rgba(17, 124, 173,.5)  0%, rgba(25, 181, 254,.5) 100%), linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+  }
+  
+  .second::before,
+  .second::after {
+    content: '';
+    position: absolute;
+    height: 110px;
+    bottom: -74px;
+    right: 0;
+    left: 0;
+    background: #171717;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    z-index:50;
+  }
+  
+  .second .container {
+    height:450px;
+  }
+  
+  .second .grid {
+    overflow: visible;
+    grid-template-columns: auto 45%;
+    gap: calc(20vw - 150px);
+  }
+  
+  .second .btn-outline {
+    border-color: rgb(17, 124, 173);
+    background-color: rgba(17, 124, 173,.6);
+  }
+  
+  /* Tertiary */
+  .third {
+   background-image: linear-gradient(
+          rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)
+        ), url("https://assets.albiononline.com/uploads/media/default/media/f30f235e8232ba19ac3b904c5a140492b56a8064.jpeg");
+    background-position: 50% 0%;
+    margin: 30px 0 0 0;
+  }
+  
+  .third .showcase-video {
+    position: relative;
+    top: 100px;
+    height: auto;
+    width: auto;
+    z-index: 100;
+    justify-self: flex-end;
+    background-image: radial-gradient(circle, rgba(161, 25, 13,.6)  0%, rgba(242, 38, 19,.6) 100%), linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+  }
+  
+  .third::before,
+  .third::after {
+    content: '';
+    position: absolute;
+    height: 110px;
+    bottom: -74px;
+    right: 0;
+    left: 0;
+    background: #171717;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    z-index:50;
+  }
+  
+  .third .container {
+    height:450px;
+  }
+  
+  .third .grid {
+    overflow: visible;
+    grid-template-columns: 45% auto;
+  }
+  
+  .third .btn-outline {
+    border-color: rgb(161, 25, 13)
+  }
+  
+  /* Fourth */
+  .fourth {
+   background-image: linear-gradient(
+          rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)
+        ), url("https://assets.albiononline.com/uploads/media/default/media/cd4b4bae7cc5c1307cc89e4c1ecb5520e1d2598b.jpeg");
+    background-position: 50% 0%;
+    margin: 30px 0 0 0;
+  }
+  
+  .fourth .showcase-video {
+    position: relative;
+    top: 100px;
+    height: auto;
+    width: auto;
+    z-index: 100;
+    justify-self: flex-end;
+    background-image: radial-gradient(circle, rgba(71, 61, 138,.5)  0%, rgba(112, 96, 214,.5) 100%), linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+  }
+  
+  .fourth::before,
+  .fourth::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    bottom: -74px;
+    right: 0;
+    left: 0;
+    background: #171717;
+    z-index:50;
+  }
+  
+  .fourth .container {
+    height:500px;
+  }
+  
+  .fourth .grid {
+    overflow: visible;
+    grid-template-columns: auto 45%;
+    gap: calc(20vw - 120px);
+  }
+  
+  .fourth #livestream {
+    height: 360px;
+    width:310px;
+    background-color:rgba(0,0,0,.4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .fourth .btn-outline {
+    border-color: rgb(71, 61, 138);
+  }
+  
+  div.build-box {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      height: 100%;
+      width: 100%;
+    }
+  div.build-box::after {
+      content: "";
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image:url(https://albiononline.com/assets/images/killboard/gear.png?u06aa0117);
+      position: absolute;
+      top: -19px;
+      right: 10px;
+      bottom: -13px;
+      left: 10px;
+      opacity: 1;
+      z-index: -1;
+  }
+  
+    div.item {
+      margin: 0 0 0 0;
+      padding:0;
+      width: 85%;
+      height: 85%;
+    }
+    
+    img.items {
+      width: 100%;
+      height: 100%;
+    }
+    
+  div.item.top1 {
+    margin: 3% 0 7% 1%;
+  }
+    div.item.top2 {
+      margin: 11% 0 -9% 7%;
+    }
+    
+  div.item.top3 {
+    margin: 3% 0 0 17%;
+  }
+  
+    div.item.mid1 {
+      margin: -6% 0 0 12%;
+    }
+  
+    div.item.mid2 {
+      margin: -5% 0 0 8%;
+    }
+  
+    div.item.mid3 {
+      margin: -6% 0 16% 5%;
+    }
+  
+    div.item.bot1 {
+      margin: -11% 0 0% 2%;
+    }
+  
+  div.item.bot2 {
+      margin: -23% 0 0 7%;
+    }
+  
+  div.item.bot3 {
+      margin: -10% 0 20% 16%;
+    }
+  div.item.mount {
+    margin: -39% -19% 51% 8%;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #171717;
+    height: 200px;
+    color: #fff;
+    margin: 70px 0 0 0;
+  }
+  
+  .footer img {
+    height: 50px;
+    width:auto;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 0 0px;
+    margin: auto 10px;
+  }
+  
+  .footer ul {
+    margin: 5px 0;
+  }
+  
+  .footer li {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    padding: 5px;
+    margin: 0px 10px;
+  }
+  
+  .footer ul a:hover {
+    border-bottom: 1px #fff solid;
+  }
+  
+  .footer .flex {
+    justify-content: space-between;
+  }
+  
+  /* Utilities */
+  .container {
+    max-width: 1100px;
+    padding: 0 40px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  
+  .flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+  }
+  
+  .btn:hover {
+    transform: scale(0.98);
+  }
+  
